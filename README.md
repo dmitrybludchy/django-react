@@ -1,1 +1,1 @@
-# Course project
+# Django with React - An Ecommerce Website
