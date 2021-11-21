@@ -1,7 +1,6 @@
 import React from 'react'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
-
 
 function Header() {
     return (
@@ -10,7 +9,7 @@ function Header() {
                 <Container className="d-flex justify-content-spacebetween align-items-center">
                     <LinkContainer to='/'>
                         <Navbar.Brand>ProShop</Navbar.Brand>
-                    </LinkContainer>             
+                    </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
@@ -19,9 +18,9 @@ function Header() {
                             </LinkContainer>
                             <LinkContainer to="/login">
                                 <Nav.Link><i className="fas fa-user me-2"></i>Login</Nav.Link>
-                            </LinkContainer>                
+                            </LinkContainer>
                         </Nav>
-                    </Navbar.Collapse>     
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </header>

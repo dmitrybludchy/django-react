@@ -7,8 +7,6 @@ import Product from '../components/Product'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 
-
-
 function HomeScreen() {
     const dispatch = useDispatch()
     const productList = useSelector(state => state.productList)
@@ -33,7 +31,6 @@ function HomeScreen() {
                         ))}
                     </Row>
             }
-
         </div>
     )
 }
