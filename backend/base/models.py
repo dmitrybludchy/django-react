@@ -48,7 +48,7 @@ class Order(models.Model):
     isDelivered = models.BooleanField(default=False)
     deliviredAt = models.DateTimeField(
         auto_now_add=False, null=True, blank=True)
-    createdAt = models.DateTimeField(auto_now_add=False)
+    createdAt = models.DateTimeField(auto_now_add=True)
     _id = models.AutoField(primary_key=True, editable=False)
 
     def __str__(self):
