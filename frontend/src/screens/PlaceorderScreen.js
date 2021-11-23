@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap'
+import React from 'react'
+import { Button, Card, Col, Image, ListGroup, Row } from 'react-bootstrap'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
-import Message from '../components/Message'
 import CheckoutSteps from '../components/CheckoutSteps'
+import Message from '../components/Message'
 
 function PlaceorderScreen() {
     const cart = useSelector(state => state.cart)
@@ -39,7 +39,7 @@ function PlaceorderScreen() {
                             <p>
                                 <strong>Method: </strong>
                                 {cart.paymentMethod}
-                               
+
                             </p>
                         </ListGroup.Item>
 
@@ -53,7 +53,7 @@ function PlaceorderScreen() {
                                         <ListGroup.Item key={index}>
                                             <Row>
                                                 <Col md={1}>
-                                                    <Image src={item.image} alt={item.name} fluid rounded/>
+                                                    <Image src={item.image} alt={item.name} fluid rounded />
                                                 </Col>
                                                 <Col>
                                                     <Link to={`/product/${item.product}`}>{item.name}</Link>
