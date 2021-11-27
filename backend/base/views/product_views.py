@@ -27,14 +27,15 @@ def createProduct(request):
     product = Product.objects.create(
         user=user,
         name='Sample Name',
-        price=0,
         brand='Sample Brand',
-        countInStock=0,
         category='Sample Category',
+        price=0,
+        countInStock=0,
         description=''
     )
 
     serializer = ProductSerializer(product, many=False)
+
     return Response(serializer.data)
 
 

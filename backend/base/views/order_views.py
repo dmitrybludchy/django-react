@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from base.models import Order, OrderItem, Product, ShippingAddress
 from base.serializers import (OrderItemSerializer, OrderSerializer,
                               ProductSerializer)
@@ -5,7 +7,6 @@ from rest_framework import serializers, status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.response import Response
-from datetime import datetime
 
 
 @api_view(['POST'])
