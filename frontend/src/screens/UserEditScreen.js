@@ -42,7 +42,7 @@ function EditUserScreen({ match, history }) {
         }
 
 
-    }, [user, userId, successUpdate, history])
+    }, [user, userId, successUpdate, history, dispatch])
 
     const submitHandler = (e) => {
         e.preventDefault()
