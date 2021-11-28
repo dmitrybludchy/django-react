@@ -8,7 +8,7 @@ import Loader from '../components/Loader'
 import Message from '../components/Message'
 import { USER_UPDATE_RESET } from '../constans/userConstans'
 
-function EditUserScreen({ match, history }) {
+function UserEditScreen({ match, history }) {
 
     const userId = match.params.id
 
@@ -109,4 +109,4 @@ function EditUserScreen({ match, history }) {
     )
 }
 
-export default EditUserScreen
+export default UserEditScreen
